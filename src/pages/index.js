@@ -18,19 +18,26 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-right">
         <div className="bg-white p-4 rounded-lg shadow">
           <ul>
-            {[
-              "چگونه امتیاز بگیریم؟",
-              "چگونه از امتیاز بهره‌مند شویم؟",
-              "چه زمانی امتیازات معاملات روز خود را می‌توانم مشاهده کنم؟",
-              "چگونه از امتیازم بهره‌مند شوم؟",
-              "آیا تنها معاملاتی که به‌صورت آنلاین انجام می‌شوند شامل امتیاز هستند؟"
-            ].map((question, index) => (
-              <li key={index} className="flex justify-between items-center text-lg font-semibold border-b py-4">
-                <a>{question}</a>
-                {/* آیکن فلش کشویی با تگ i */}
-                <i className="fas fa-chevron-down text-gray-500"></i>
-              </li>
-            ))}
+            <li className="flex justify-between items-center text-lg font-semibold border-b py-4">
+              <a>چگونه امتیاز بگیریم؟</a>
+              <i className="fas fa-chevron-down text-gray-500"></i>
+            </li>
+            <li className="flex justify-between items-center text-lg font-semibold border-b py-4">
+              <a>چگونه از امتیاز بهره‌مند شویم؟</a>
+              <i className="fas fa-chevron-down text-gray-500"></i>
+            </li>
+            <li className="flex justify-between items-center text-lg font-semibold border-b py-4">
+              <a>چه زمانی امتیازات معاملات روز خود را می‌توانم مشاهده کنم؟</a>
+              <i className="fas fa-chevron-down text-gray-500"></i>
+            </li>
+            <li className="flex justify-between items-center text-lg font-semibold border-b py-4">
+              <a>چگونه از امتیازم بهره‌مند شوم؟</a>
+              <i className="fas fa-chevron-down text-gray-500"></i>
+            </li>
+            <li className="flex justify-between items-center text-lg font-semibold border-b py-4">
+              <a>آیا تنها معاملاتی که به‌صورت آنلاین انجام می‌شوند شامل امتیاز هستند؟</a>
+              <i className="fas fa-chevron-down text-gray-500"></i>
+            </li>
           </ul>
         </div>
 
