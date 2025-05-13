@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="rtl p-8 space-y-8">
       <div className="text-right">
-        <h1 className="text-3xl font-bold">پرسش های متداول</h1>
+        <h1 className="text-2xl font-bold bg">پرسش های متداول</h1>
 
         <h2 className="text-xl font-bold my-8">چگونه عضو باشگاه شویم؟</h2>
         <p className="text-xl ml-0 md:ml-[50%]">
