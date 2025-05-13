@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* اعمال جهت RTL برای کل صفحه */
 .page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
@@ -5,6 +10,9 @@
 
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
+
+  direction: rtl; /* 👈 اضافه شد */
+  text-align: right; /* 👈 اضافه شد */
 
   display: grid;
   grid-template-rows: 20px 1fr 20px;
@@ -36,7 +44,7 @@
 
 .main ol {
   font-family: var(--font-geist-mono);
-  padding-left: 0;
+  padding-right: 0; /* 👈 چون راست‌چینه */
   margin: 0;
   font-size: 14px;
   line-height: 24px;
@@ -59,6 +67,7 @@
 .ctas {
   display: flex;
   gap: 16px;
+  flex-direction: row-reverse; /* 👈 دکمه‌ها از راست به چپ */
 }
 
 .ctas a {
@@ -96,6 +105,7 @@ a.secondary {
   grid-row-start: 3;
   display: flex;
   gap: 24px;
+  flex-direction: row-reverse; /* 👈 آیکون‌های فوتر RTL */
 }
 
 .footer a {
@@ -108,7 +118,6 @@ a.secondary {
   flex-shrink: 0;
 }
 
-/* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background: var(--button-primary-hover);
@@ -133,11 +142,11 @@ a.secondary {
   }
 
   .main {
-    align-items: center;
+    align-items: flex-end; /* 👈 تطبیق با متن راست‌چین */
   }
 
   .main ol {
-    text-align: center;
+    text-align: right; /* 👈 هماهنگ با RTL */
   }
 
   .ctas {
